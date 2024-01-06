@@ -32,6 +32,7 @@ def classify_image(base64_string, path = None):
 
         probabilities = np.round(model.predict_proba(final_img)*100, 2)[0].tolist()
         classes = label_encoder.classes_.tolist()
+        classes = [x.title().replace('_', ' ') for x in classes]
 
         class_probabilities = []
         for p, c in zip(probabilities, classes):
