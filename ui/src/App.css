@@ -1,6 +1,85 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+.heading {
+  margin: 0 0 15px 0;
+  padding: 10px;
+  font-size: 1.7em;
+  font-weight: 500;
+  color: rgb(112, 111, 111);
+  background-color: rgb(242, 244, 245);
+  border-bottom: rgb(219, 219, 219) 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.drag-and-drop-area {
+  width: 300px;
+  height: 200px;
+  border: 2px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dragging {
+  background-color: #e0e0e0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.classification {
+  display: flex;
+  padding: 10px;
+  margin: 50px 0 0 0;
+  justify-content: center;
+}
+
+.uploaded-image {
+  max-width: 250px;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+}
+
+.choose-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+input {
+  justify-self: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 200px;
 }

@@ -1,12 +1,19 @@
-import { useState } from 'react'
 import './App.css'
+import Cards from './components/Cards'
+import ImageUpload from './components/ImageUpload'
+import ClassesTable from './components/ClassesTable'
 
 function App() {
 
   return (
     <>
-      <div>
-        Hello World!
+      <div className='heading'>
+        <p>Indian Cricketer Classifier</p>
+      </div>
+      <Cards />
+      <div className='classification'>
+        <ImageUpload />
+        {/* <ClassesTable /> */}
       </div>
     </>
   )
