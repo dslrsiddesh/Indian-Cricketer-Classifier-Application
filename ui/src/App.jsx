@@ -1,20 +1,17 @@
 import './App.css'
+import Header from './components/Header'
 import Cards from './components/Cards'
-import ImageUpload from './components/ImageUpload'
-import ClassesTable from './components/ClassesTable'
+import Classification from './components/Classification'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
     <>
-      <div className='heading'>
-        <p>Indian Cricketer Classifier</p>
-      </div>
+      <Header />
       <Cards />
-      <div className='classification'>
-        <ImageUpload />
-        {/* <ClassesTable /> */}
-      </div>
+      <Classification />
+      <Footer />
     </>
   )
 }

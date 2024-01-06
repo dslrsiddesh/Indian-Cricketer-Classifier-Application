@@ -59,7 +59,7 @@ def get_cropped_images(path: str, base64_image):
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray_img, 1.25, 6)
     if len(faces) == 0:
-        return 'Please check the image, Face not detected'
+        return 'Please check the image, Classifier was not able to detect Face properly'
     else:
         faces_images = []
         for (x, y, w, h) in faces:
@@ -69,7 +69,7 @@ def get_cropped_images(path: str, base64_image):
             if len(eyes) >= 1:
                 faces_images.append(roi_color)
             else:
-                return 'Please check the image, Eyes not detected'
+                return 'Please check the image, Classifier was not able to detect Eyes properly'
         if len(faces_images) != 0:
             return faces_images
     return None
