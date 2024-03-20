@@ -44,3 +44,7 @@ npm run dev
 cd server
 uvicorn server:app --reload
 ```
+
+### Note
+
+Try to setup and run the project in a virtual environment to avoid conflicts with other packages.
